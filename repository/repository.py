@@ -30,8 +30,6 @@ class Repository:
         if entity == None:
             raise Exception("Does not exist!")
 
-        if attribute == "jobID":
-            self.__entitiesList[self.find_position(entity)].set_jobID(attribute_value)
         elif attribute == "title":
             self.__entitiesList[self.find_position(entity)].set_title(attribute_value)
         elif attribute == "department":
